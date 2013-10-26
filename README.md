@@ -14,11 +14,12 @@ Pick any specific email address or username that you’d like and use the follow
 ### The screens
 
 
-Login Screen
+#### Login Screen
 
-![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/login_01.png)  ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/login_02.png)
+![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/login_01.png) ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/login_02.png)
 
 Intro Screen
+
 
 
 Main Site with several elements
