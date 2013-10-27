@@ -1,7 +1,7 @@
 TMSample
 ========
 
-The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview amongst others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7.
+The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview amongst others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7. It uses several available open source frameworks (see footer). Thanks!
 
 
 ### How to login into the app
@@ -9,6 +9,21 @@ The testmunk sample app is a collection of iOS components including login screen
 
 Pick any specific email address or username that you’d like and use the following **password: testmunk**
 
+
+### Testcases
+
+Several calabash/cucumber testcases demonstrate the possibilities of automated app testing. Testcases are covering: 
+- Entering text into input fields
+- Touching Buttons
+- Swiping
+- Scrolling
+- Several Assertions
+
+This can easily be extend by creating more automated tests, see the [testmunk teststep library](http://docs.testmunk.com/reference/) that will assist you.
+
+### How to run your first automated functional test?
+
+The xcodeproj in this repo doesn't include the calabash testing framework yet. You can install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/) or even easier within just a couple of minutes by downloading the free testmunk mac app.
 
 
 ### The screens
@@ -53,4 +68,24 @@ Pick any specific email address or username that you’d like and use the follow
 
 ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/webview_01.png)
 
+
+
+###The TMSample app uses the following frameworks. Thanks a lot!
+
+JVFloatLabeledTextField @jverdi
+https://github.com/jverdi/JVFloatLabeledTextField
+
+EAIntroView @ealeksandrov
+https://github.com/ealeksandrov/EAIntroView
+
+
+FlatUIKit @jflinter
+https://github.com/Grouper/FlatUIKit
+
+SlideOutNavigation @andreamazz 
+https://github.com/andreamazz/SlideOutNavigation
+
+
+AGPhotoBrowser @andreagiavatto
+https://github.com/andreagiavatto/AGPhotoBrowser 
 
