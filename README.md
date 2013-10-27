@@ -19,7 +19,7 @@ Several calabash/cucumber testcases demonstrate the possibilities of automated a
 - Scrolling
 - Several Assertions
 
-This can be easily extend by creating more automated tests, see the [testmunk teststep library](https://github.com/username/repoName/somePathTo/myExampleCode).
+This can be easily extend by creating more automated tests, see the [testmunk teststep library](http://docs.testmunk.com/reference/).
 
 ### The screens
 
