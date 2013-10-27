@@ -55,7 +55,7 @@ Pick any specific email address or username that you’d like and use the follow
 
 
 
-###The TMSample app uses the following frameworks. Thanks a lot guys!
+###The TMSample app uses the following frameworks. Thanks a lot!
 
 JVFloatLabeledTextField @jverdi
 https://github.com/jverdi/JVFloatLabeledTextField
