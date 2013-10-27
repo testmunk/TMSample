@@ -1,7 +1,7 @@
 TMSample
 ========
 
-The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview amongst others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7.
+The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview amongst others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7. It uses several available open source frameworks (see footer). Thanks guys!
 
 
 ### How to login into the app
