@@ -60,7 +60,7 @@ Pick any specific email address or username that you’d like and use the follow
 JVFloatLabeledTextField @jverdi
 https://github.com/jverdi/JVFloatLabeledTextField
 
-EAIntroView @ ealeksandrov
+EAIntroView @ealeksandrov
 https://github.com/ealeksandrov/EAIntroView
 
 
