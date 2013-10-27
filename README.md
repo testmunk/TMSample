@@ -24,7 +24,7 @@ Pick any specific email address or username that you’d like and use the follow
 ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/intro_01.png) ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/intro_02.png) ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/intro_03.png)
 
 
-#### Main Site with several elements
+#### Home view with several elements
 
 ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/main_01.png) ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/main_02.png) ::: ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/main_03.png)
 
