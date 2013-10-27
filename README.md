@@ -21,9 +21,9 @@ Several calabash/cucumber testcases demonstrate the possibilities of automated a
 
 This can easily be extend by creating more automated tests, see the [testmunk teststep library](http://docs.testmunk.com/reference/) that will assist you.
 
-### How to run your first test?
+### How to run your first automated functional test?
 
-The xcodeproj in this repo doesn't include the calabash testing framework yet. You can install it manually by following the manual steps or even easier within just a couple of minutes by downloading the testmunk mac app.
+The xcodeproj in this repo doesn't include the calabash testing framework yet. You can install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/)or even easier within just a couple of minutes by downloading the testmunk mac app.
 
 
 ### The screens
