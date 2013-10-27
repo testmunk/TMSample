@@ -54,3 +54,23 @@ Pick any specific email address or username that you’d like and use the follow
 ![alt tag](https://raw.github.com/testmunk/TMSample/master/screenshots/webview_01.png)
 
 
+
+###The TMSample app uses the following frameworks. Thanks a lot guys!
+
+JVFloatLabeledTextField @jverdi
+https://github.com/jverdi/JVFloatLabeledTextField
+
+EAIntroView @ ealeksandrov
+https://github.com/ealeksandrov/EAIntroView
+
+
+FlatUIKit @jflinter
+https://github.com/Grouper/FlatUIKit
+
+SlideOutNavigation @andreamazz 
+https://github.com/andreamazz/SlideOutNavigation
+
+
+AGPhotoBrowser @andreagiavatto
+https://github.com/andreagiavatto/AGPhotoBrowser 
+
