@@ -74,7 +74,7 @@ EAIntroView @ealeksandrov
 https://github.com/ealeksandrov/EAIntroView
 
 
-FlatUIKit * User@SHA: jflinter
+FlatUIKit User#Num: jflinter#1
 https://github.com/Grouper/FlatUIKit
 
 SlideOutNavigation @andreamazz 
