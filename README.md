@@ -10,6 +10,16 @@ The testmunk sample app is a collection of iOS components including login screen
 Pick any specific email address or username that you’d like and use the following **password: testmunk**
 
 
+### The testcases
+
+Several calabash/cucumber testcases demonstrate the possibilities of automated app testing. Testcases are covering: 
+- Entering text into input fields
+- Touching Buttons
+- Swiping
+- Scrolling
+- Several Assertions
+
+This can be easily extend by creating more automated tests, see the testmunk teststep library
 
 ### The screens
 
@@ -64,7 +74,7 @@ EAIntroView @ealeksandrov
 https://github.com/ealeksandrov/EAIntroView
 
 
-FlatUIKit @jflinter
+FlatUIKit * User@SHA: jflinter
 https://github.com/Grouper/FlatUIKit
 
 SlideOutNavigation @andreamazz 
