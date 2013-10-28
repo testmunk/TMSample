@@ -1,7 +1,7 @@
 TMSample
 ========
 
-The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview amongst others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7. It uses several available open source frameworks (see footer). Thanks!
+The testmunk sample app is a collection of iOS components including login screen, intro screens, navigation menu and tableview, plus a few others. It is a perfect start to try out your first automated testscripts or replicate issues and bugs. It supports iOS5, 6 and 7 using several available open source frameworks (see footer). Thanks!
 
 
 ### How to login into the app
@@ -19,11 +19,11 @@ Several calabash/cucumber testcases demonstrate the possibilities of automated a
 - Scrolling
 - Several Assertions
 
-This can easily be extend by creating more automated tests, see the [testmunk teststep library](http://docs.testmunk.com/reference/) that will assist you.
+The [testmunk teststep library](http://docs.testmunk.com/reference/) can help you with extending.
 
 ### How to run your first automated functional test?
 
-The xcodeproj in this repo doesn't include the calabash testing framework yet. You can install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/) or even easier within just a couple of minutes by downloading the free testmunk mac app.
+The xcodeproj in this repo doesn't include the calabash testing framework yet. The easiest option is to download the free testmunk mac app, which will work within a few minutes. You can also install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/).
 
 
 ### The screens
