@@ -23,7 +23,7 @@ The [testmunk teststep library](http://docs.testmunk.com/reference/) can help yo
 
 ### How to run your first automated functional test?
 
-The xcodeproj in this repo doesn't include the calabash testing framework yet. The easiest option is to download the free testmunk mac app, which assist you for the installation. You can also install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/).
+The xcodeproj in this repo doesn't include the calabash testing framework yet. The easiest option is to download the free testmunk mac app, which assists you for the installation. You can also install it manually by following the [manual installation](http://docs.testmunk.com/manual-installation/).
 
 
 ### The screens
