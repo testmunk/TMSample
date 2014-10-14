@@ -7,6 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141AFC3C19EC0B1900343CC7 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB9C1816BB0D00DFB373 /* MapViewAnnotation.m */; };
+		141AFC3D19EC0B1900343CC7 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3118166E5D00DBB082 /* FUIAlertView.m */; };
+		141AFC3E19EC0B1900343CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34B416CE383F00FBB3DA /* main.m */; };
+		141AFC3F19EC0B1900343CC7 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F3181697CD0071506A /* EAIntroView.m */; };
+		141AFC4019EC0B1900343CC7 /* PXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F91816A0120071506A /* PXAlertView.m */; };
+		141AFC4119EC0B1900343CC7 /* TDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34B816CE383F00FBB3DA /* TDAppDelegate.m */; };
+		141AFC4219EC0B1900343CC7 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 412ABF711816916900ECF984 /* JVFloatLabeledTextField.m */; };
+		141AFC4319EC0B1900343CC7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D427EC2D1817A93900662AAF /* TableViewController.m */; };
+		141AFC4419EC0B1900343CC7 /* WebVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB941816B21C00DFB373 /* WebVViewController.m */; };
+		141AFC4519EC0B1900343CC7 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C5318166E5D00DBB082 /* UITableViewCell+FlatUI.m */; };
+		141AFC4619EC0B1900343CC7 /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3918166E5D00DBB082 /* FUISegmentedControl.m */; };
+		141AFC4719EC0B1900343CC7 /* TDSliderContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34C416CE383F00FBB3DA /* TDSliderContainerViewController.m */; };
+		141AFC4819EC0B1900343CC7 /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3B18166E5D00DBB082 /* FUISwitch.m */; };
+		141AFC4919EC0B1900343CC7 /* FUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3D18166E5D00DBB082 /* FUITextField.m */; };
+		141AFC4A19EC0B1900343CC7 /* FUIPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3718166E5D00DBB082 /* FUIPopoverBackgroundView.m */; };
+		141AFC4B19EC0B1900343CC7 /* AMSlideOutGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C8318168E2900DBB082 /* AMSlideOutGlobals.m */; };
+		141AFC4C19EC0B1900343CC7 /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4B18166E5D00DBB082 /* UIProgressView+FlatUI.m */; };
+		141AFC4D19EC0B1900343CC7 /* TDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C14181548A800DBB082 /* TDLoginViewController.m */; };
+		141AFC4E19EC0B1900343CC7 /* TDTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416B7A761818CD29009D1F7C /* TDTableDetailViewController.m */; };
+		141AFC4F19EC0B1900343CC7 /* AGPhotoBrowserOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB821816A56300DFB373 /* AGPhotoBrowserOverlayView.m */; };
+		141AFC5019EC0B1900343CC7 /* AGPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB841816A56300DFB373 /* AGPhotoBrowserView.m */; };
+		141AFC5119EC0B1900343CC7 /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4D18166E5D00DBB082 /* UISlider+FlatUI.m */; };
+		141AFC5219EC0B1900343CC7 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4518166E5D00DBB082 /* UIImage+FlatUI.m */; };
+		141AFC5319EC0B1900343CC7 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4318166E5D00DBB082 /* UIFont+FlatUI.m */; };
+		141AFC5419EC0B1900343CC7 /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4718166E5D00DBB082 /* UINavigationBar+FlatUI.m */; };
+		141AFC5519EC0B1900343CC7 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F1181697CD0071506A /* EAIntroPage.m */; };
+		141AFC5619EC0B1900343CC7 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C5518166E5D00DBB082 /* UIToolbar+FlatUI.m */; };
+		141AFC5719EC0B1900343CC7 /* UIPopoverController+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4918166E5D00DBB082 /* UIPopoverController+FlatUI.m */; };
+		141AFC5819EC0B1900343CC7 /* AMSlideTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C8918168E2900DBB082 /* AMSlideTableHeader.m */; };
+		141AFC5919EC0B1900343CC7 /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3518166E5D00DBB082 /* FUICellBackgroundView.m */; };
+		141AFC5A19EC0B1900343CC7 /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C5118166E5D00DBB082 /* UITabBar+FlatUI.m */; };
+		141AFC5B19EC0B1900343CC7 /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C8B18168E2900DBB082 /* AMTableView.m */; };
+		141AFC5C19EC0B1900343CC7 /* AGPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1451B72719E85FF9008BBE2D /* AGPhotoBrowserCell.m */; };
+		141AFC5D19EC0B1900343CC7 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4118166E5D00DBB082 /* UIColor+FlatUI.m */; };
+		141AFC5E19EC0B1900343CC7 /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3F18166E5D00DBB082 /* UIBarButtonItem+FlatUI.m */; };
+		141AFC5F19EC0B1900343CC7 /* AMSlideTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C8718168E2900DBB082 /* AMSlideTableCell.m */; };
+		141AFC6019EC0B1900343CC7 /* AMSlideOutNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C8518168E2900DBB082 /* AMSlideOutNavigationController.m */; };
+		141AFC6119EC0B1900343CC7 /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3318166E5D00DBB082 /* FUIButton.m */; };
+		141AFC6219EC0B1900343CC7 /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C4F18166E5D00DBB082 /* UIStepper+FlatUI.m */; };
+		141AFC6319EC0B1900343CC7 /* AGPhotoBrowserZoomableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1451B72919E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m */; };
+		141AFC6419EC0B1900343CC7 /* MapVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB971816B7A200DFB373 /* MapVViewController.m */; };
+		141AFC6519EC0B1900343CC7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB8F1816A62100DFB373 /* PhotoViewController.m */; };
+		141AFC6719EC0B1900343CC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40ABB991816B85400DFB373 /* MapKit.framework */; };
+		141AFC6819EC0B1900343CC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417788FD1816A1000071506A /* QuartzCore.framework */; };
+		141AFC6919EC0B1900343CC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E34A816CE383F00FBB3DA /* UIKit.framework */; };
+		141AFC6A19EC0B1900343CC7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F19C1618166D1900DBB082 /* CoreText.framework */; };
+		141AFC6B19EC0B1900343CC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E34AA16CE383F00FBB3DA /* Foundation.framework */; };
+		141AFC6C19EC0B1900343CC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E34AC16CE383F00FBB3DA /* CoreGraphics.framework */; };
+		141AFC6E19EC0B1900343CC7 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1C18166E1D00DBB082 /* Lato-BoldItalic.ttf */; };
+		141AFC6F19EC0B1900343CC7 /* original@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBD118178A0900DFB373 /* original@2x.png */; };
+		141AFC7019EC0B1900343CC7 /* introBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBD018178A0900DFB373 /* introBg@2x.png */; };
+		141AFC7119EC0B1900343CC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654E34B116CE383F00FBB3DA /* InfoPlist.strings */; };
+		141AFC7219EC0B1900343CC7 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1F18166E1D00DBB082 /* Lato-Italic.ttf */; };
+		141AFC7319EC0B1900343CC7 /* iconSlide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C8D18168E2900DBB082 /* iconSlide@2x.png */; };
+		141AFC7419EC0B1900343CC7 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1918166E1D00DBB082 /* Lato-Black.ttf */; };
+		141AFC7519EC0B1900343CC7 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C2018166E1D00DBB082 /* Lato-Light.ttf */; };
+		141AFC7619EC0B1900343CC7 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1D18166E1D00DBB082 /* Lato-Hairline.ttf */; };
+		141AFC7719EC0B1900343CC7 /* iconSlideBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C8F18168E2900DBB082 /* iconSlideBlack@2x.png */; };
+		141AFC7819EC0B1900343CC7 /* supportcat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBD218178A0900DFB373 /* supportcat@2x.png */; };
+		141AFC7919EC0B1900343CC7 /* iconSlideBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C8E18168E2900DBB082 /* iconSlideBlack.png */; };
+		141AFC7A19EC0B1900343CC7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBC918178A0900DFB373 /* 1.png */; };
+		141AFC7B19EC0B1900343CC7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654E34C016CE383F00FBB3DA /* MainStoryboard.storyboard */; };
+		141AFC7C19EC0B1900343CC7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBCD18178A0900DFB373 /* Default.png */; };
+		141AFC7D19EC0B1900343CC7 /* femalecodertocat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBCF18178A0900DFB373 /* femalecodertocat@2x.png */; };
+		141AFC7E19EC0B1900343CC7 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1B18166E1D00DBB082 /* Lato-Bold.ttf */; };
+		141AFC7F19EC0B1900343CC7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBCA18178A0900DFB373 /* 2.png */; };
+		141AFC8019EC0B1900343CC7 /* LocalPage.html in Resources */ = {isa = PBXBuildFile; fileRef = D40ABB911816B1BB00DFB373 /* LocalPage.html */; };
+		141AFC8119EC0B1900343CC7 /* sample3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D40ABB8A1816A57900DFB373 /* sample3.jpg */; };
+		141AFC8219EC0B1900343CC7 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1E18166E1D00DBB082 /* Lato-HairlineItalic.ttf */; };
+		141AFC8319EC0B1900343CC7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 417788FB1816A0D60071506A /* Default-568h@2x.png */; };
+		141AFC8419EC0B1900343CC7 /* sample1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D40ABB881816A57800DFB373 /* sample1.jpg */; };
+		141AFC8519EC0B1900343CC7 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 651A5A7B177AE2D8003DBF3B /* icon1.png */; };
+		141AFC8619EC0B1900343CC7 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 651A5A7C177AE2D8003DBF3B /* icon2.png */; };
+		141AFC8719EC0B1900343CC7 /* iconSlide.png in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C8C18168E2900DBB082 /* iconSlide.png */; };
+		141AFC8819EC0B1900343CC7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBCB18178A0900DFB373 /* 3.png */; };
+		141AFC8919EC0B1900343CC7 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C1A18166E1D00DBB082 /* Lato-BlackItalic.ttf */; };
+		141AFC8A19EC0B1900343CC7 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C2218166E1D00DBB082 /* Lato-Regular.ttf */; };
+		141AFC8B19EC0B1900343CC7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40ABBCE18178A0900DFB373 /* Default@2x.png */; };
+		141AFC8C19EC0B1900343CC7 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4F19C2118166E1D00DBB082 /* Lato-LightItalic.ttf */; };
+		141AFC8D19EC0B1900343CC7 /* sample2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D40ABB891816A57800DFB373 /* sample2.jpg */; };
+		141AFC9419EC0CEA00343CC7 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141AFC9319EC0CEA00343CC7 /* calabash.framework */; };
+		141AFC9519EC0D6300343CC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1451B72419E8086B008BBE2D /* CFNetwork.framework */; };
+		1451B72A19E85FF9008BBE2D /* AGPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1451B72719E85FF9008BBE2D /* AGPhotoBrowserCell.m */; };
+		1451B72C19E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1451B72919E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m */; };
 		412ABF721816916900ECF984 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 412ABF711816916900ECF984 /* JVFloatLabeledTextField.m */; };
 		416B7A771818CD29009D1F7C /* TDTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416B7A761818CD29009D1F7C /* TDTableDetailViewController.m */; };
 		417788F4181697CD0071506A /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F1181697CD0071506A /* EAIntroPage.m */; };
@@ -88,6 +172,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141AFC9119EC0B1900343CC7 /* TestmunkDemo-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestmunkDemo-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141AFC9219EC0B1900343CC7 /* TestmunkDemo copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestmunkDemo copy2-Info.plist"; path = "/Users/ktsymbaliuk/Projects/TMSample/TMSample/TestmunkDemo copy2-Info.plist"; sourceTree = "<absolute>"; };
+		141AFC9319EC0CEA00343CC7 /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		1451B72419E8086B008BBE2D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1451B72619E85FF9008BBE2D /* AGPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPhotoBrowserCell.h; sourceTree = "<group>"; };
+		1451B72719E85FF9008BBE2D /* AGPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPhotoBrowserCell.m; sourceTree = "<group>"; };
+		1451B72819E85FF9008BBE2D /* AGPhotoBrowserZoomableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPhotoBrowserZoomableView.h; sourceTree = "<group>"; };
+		1451B72919E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPhotoBrowserZoomableView.m; sourceTree = "<group>"; };
 		412ABF701816916900ECF984 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		412ABF711816916900ECF984 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		416B7A751818CD29009D1F7C /* TDTableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTableDetailViewController.h; sourceTree = "<group>"; };
@@ -213,6 +305,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		141AFC6619EC0B1900343CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141AFC6719EC0B1900343CC7 /* MapKit.framework in Frameworks */,
+				141AFC6819EC0B1900343CC7 /* QuartzCore.framework in Frameworks */,
+				141AFC6919EC0B1900343CC7 /* UIKit.framework in Frameworks */,
+				141AFC6A19EC0B1900343CC7 /* CoreText.framework in Frameworks */,
+				141AFC6B19EC0B1900343CC7 /* Foundation.framework in Frameworks */,
+				141AFC6C19EC0B1900343CC7 /* CoreGraphics.framework in Frameworks */,
+				141AFC9519EC0D6300343CC7 /* CFNetwork.framework in Frameworks */,
+				141AFC9419EC0CEA00343CC7 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		654E34A216CE383F00FBB3DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +455,7 @@
 				654E34AE16CE383F00FBB3DA /* TestmunkDemo */,
 				654E34A716CE383F00FBB3DA /* Frameworks */,
 				654E34A616CE383F00FBB3DA /* Products */,
+				141AFC9219EC0B1900343CC7 /* TestmunkDemo copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -355,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				654E34A516CE383F00FBB3DA /* TestmunkDemo.app */,
+				141AFC9119EC0B1900343CC7 /* TestmunkDemo-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,6 +471,8 @@
 		654E34A716CE383F00FBB3DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				141AFC9319EC0CEA00343CC7 /* calabash.framework */,
+				1451B72419E8086B008BBE2D /* CFNetwork.framework */,
 				D40ABB991816B85400DFB373 /* MapKit.framework */,
 				417788FD1816A1000071506A /* QuartzCore.framework */,
 				D4F19C1618166D1900DBB082 /* CoreText.framework */,
@@ -402,6 +513,10 @@
 			children = (
 				D40ABB871816A57800DFB373 /* Images */,
 				D40ABB7F1816A56300DFB373 /* AGPhotoBrowserDataSource.h */,
+				1451B72619E85FF9008BBE2D /* AGPhotoBrowserCell.h */,
+				1451B72719E85FF9008BBE2D /* AGPhotoBrowserCell.m */,
+				1451B72819E85FF9008BBE2D /* AGPhotoBrowserZoomableView.h */,
+				1451B72919E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m */,
 				D40ABB801816A56300DFB373 /* AGPhotoBrowserDelegate.h */,
 				D40ABB811816A56300DFB373 /* AGPhotoBrowserOverlayView.h */,
 				D40ABB821816A56300DFB373 /* AGPhotoBrowserOverlayView.m */,
@@ -525,6 +640,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		141AFC3A19EC0B1900343CC7 /* TestmunkDemo-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141AFC8E19EC0B1900343CC7 /* Build configuration list for PBXNativeTarget "TestmunkDemo-cal" */;
+			buildPhases = (
+				141AFC3B19EC0B1900343CC7 /* Sources */,
+				141AFC6619EC0B1900343CC7 /* Frameworks */,
+				141AFC6D19EC0B1900343CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestmunkDemo-cal";
+			productName = SlideoutStoryboardSample;
+			productReference = 141AFC9119EC0B1900343CC7 /* TestmunkDemo-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 		654E34A416CE383F00FBB3DA /* TestmunkDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 654E34C816CE383F00FBB3DA /* Build configuration list for PBXNativeTarget "TestmunkDemo" */;
@@ -565,11 +697,51 @@
 			projectRoot = "";
 			targets = (
 				654E34A416CE383F00FBB3DA /* TestmunkDemo */,
+				141AFC3A19EC0B1900343CC7 /* TestmunkDemo-cal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		141AFC6D19EC0B1900343CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141AFC6E19EC0B1900343CC7 /* Lato-BoldItalic.ttf in Resources */,
+				141AFC6F19EC0B1900343CC7 /* original@2x.png in Resources */,
+				141AFC7019EC0B1900343CC7 /* introBg@2x.png in Resources */,
+				141AFC7119EC0B1900343CC7 /* InfoPlist.strings in Resources */,
+				141AFC7219EC0B1900343CC7 /* Lato-Italic.ttf in Resources */,
+				141AFC7319EC0B1900343CC7 /* iconSlide@2x.png in Resources */,
+				141AFC7419EC0B1900343CC7 /* Lato-Black.ttf in Resources */,
+				141AFC7519EC0B1900343CC7 /* Lato-Light.ttf in Resources */,
+				141AFC7619EC0B1900343CC7 /* Lato-Hairline.ttf in Resources */,
+				141AFC7719EC0B1900343CC7 /* iconSlideBlack@2x.png in Resources */,
+				141AFC7819EC0B1900343CC7 /* supportcat@2x.png in Resources */,
+				141AFC7919EC0B1900343CC7 /* iconSlideBlack.png in Resources */,
+				141AFC7A19EC0B1900343CC7 /* 1.png in Resources */,
+				141AFC7B19EC0B1900343CC7 /* MainStoryboard.storyboard in Resources */,
+				141AFC7C19EC0B1900343CC7 /* Default.png in Resources */,
+				141AFC7D19EC0B1900343CC7 /* femalecodertocat@2x.png in Resources */,
+				141AFC7E19EC0B1900343CC7 /* Lato-Bold.ttf in Resources */,
+				141AFC7F19EC0B1900343CC7 /* 2.png in Resources */,
+				141AFC8019EC0B1900343CC7 /* LocalPage.html in Resources */,
+				141AFC8119EC0B1900343CC7 /* sample3.jpg in Resources */,
+				141AFC8219EC0B1900343CC7 /* Lato-HairlineItalic.ttf in Resources */,
+				141AFC8319EC0B1900343CC7 /* Default-568h@2x.png in Resources */,
+				141AFC8419EC0B1900343CC7 /* sample1.jpg in Resources */,
+				141AFC8519EC0B1900343CC7 /* icon1.png in Resources */,
+				141AFC8619EC0B1900343CC7 /* icon2.png in Resources */,
+				141AFC8719EC0B1900343CC7 /* iconSlide.png in Resources */,
+				141AFC8819EC0B1900343CC7 /* 3.png in Resources */,
+				141AFC8919EC0B1900343CC7 /* Lato-BlackItalic.ttf in Resources */,
+				141AFC8A19EC0B1900343CC7 /* Lato-Regular.ttf in Resources */,
+				141AFC8B19EC0B1900343CC7 /* Default@2x.png in Resources */,
+				141AFC8C19EC0B1900343CC7 /* Lato-LightItalic.ttf in Resources */,
+				141AFC8D19EC0B1900343CC7 /* sample2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		654E34A316CE383F00FBB3DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,6 +784,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		141AFC3B19EC0B1900343CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141AFC3C19EC0B1900343CC7 /* MapViewAnnotation.m in Sources */,
+				141AFC3D19EC0B1900343CC7 /* FUIAlertView.m in Sources */,
+				141AFC3E19EC0B1900343CC7 /* main.m in Sources */,
+				141AFC3F19EC0B1900343CC7 /* EAIntroView.m in Sources */,
+				141AFC4019EC0B1900343CC7 /* PXAlertView.m in Sources */,
+				141AFC4119EC0B1900343CC7 /* TDAppDelegate.m in Sources */,
+				141AFC4219EC0B1900343CC7 /* JVFloatLabeledTextField.m in Sources */,
+				141AFC4319EC0B1900343CC7 /* TableViewController.m in Sources */,
+				141AFC4419EC0B1900343CC7 /* WebVViewController.m in Sources */,
+				141AFC4519EC0B1900343CC7 /* UITableViewCell+FlatUI.m in Sources */,
+				141AFC4619EC0B1900343CC7 /* FUISegmentedControl.m in Sources */,
+				141AFC4719EC0B1900343CC7 /* TDSliderContainerViewController.m in Sources */,
+				141AFC4819EC0B1900343CC7 /* FUISwitch.m in Sources */,
+				141AFC4919EC0B1900343CC7 /* FUITextField.m in Sources */,
+				141AFC4A19EC0B1900343CC7 /* FUIPopoverBackgroundView.m in Sources */,
+				141AFC4B19EC0B1900343CC7 /* AMSlideOutGlobals.m in Sources */,
+				141AFC4C19EC0B1900343CC7 /* UIProgressView+FlatUI.m in Sources */,
+				141AFC4D19EC0B1900343CC7 /* TDLoginViewController.m in Sources */,
+				141AFC4E19EC0B1900343CC7 /* TDTableDetailViewController.m in Sources */,
+				141AFC4F19EC0B1900343CC7 /* AGPhotoBrowserOverlayView.m in Sources */,
+				141AFC5019EC0B1900343CC7 /* AGPhotoBrowserView.m in Sources */,
+				141AFC5119EC0B1900343CC7 /* UISlider+FlatUI.m in Sources */,
+				141AFC5219EC0B1900343CC7 /* UIImage+FlatUI.m in Sources */,
+				141AFC5319EC0B1900343CC7 /* UIFont+FlatUI.m in Sources */,
+				141AFC5419EC0B1900343CC7 /* UINavigationBar+FlatUI.m in Sources */,
+				141AFC5519EC0B1900343CC7 /* EAIntroPage.m in Sources */,
+				141AFC5619EC0B1900343CC7 /* UIToolbar+FlatUI.m in Sources */,
+				141AFC5719EC0B1900343CC7 /* UIPopoverController+FlatUI.m in Sources */,
+				141AFC5819EC0B1900343CC7 /* AMSlideTableHeader.m in Sources */,
+				141AFC5919EC0B1900343CC7 /* FUICellBackgroundView.m in Sources */,
+				141AFC5A19EC0B1900343CC7 /* UITabBar+FlatUI.m in Sources */,
+				141AFC5B19EC0B1900343CC7 /* AMTableView.m in Sources */,
+				141AFC5C19EC0B1900343CC7 /* AGPhotoBrowserCell.m in Sources */,
+				141AFC5D19EC0B1900343CC7 /* UIColor+FlatUI.m in Sources */,
+				141AFC5E19EC0B1900343CC7 /* UIBarButtonItem+FlatUI.m in Sources */,
+				141AFC5F19EC0B1900343CC7 /* AMSlideTableCell.m in Sources */,
+				141AFC6019EC0B1900343CC7 /* AMSlideOutNavigationController.m in Sources */,
+				141AFC6119EC0B1900343CC7 /* FUIButton.m in Sources */,
+				141AFC6219EC0B1900343CC7 /* UIStepper+FlatUI.m in Sources */,
+				141AFC6319EC0B1900343CC7 /* AGPhotoBrowserZoomableView.m in Sources */,
+				141AFC6419EC0B1900343CC7 /* MapVViewController.m in Sources */,
+				141AFC6519EC0B1900343CC7 /* PhotoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		654E34A116CE383F00FBB3DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -648,12 +869,14 @@
 				D4F19C5818166E5D00DBB082 /* FUICellBackgroundView.m in Sources */,
 				D4F19C6618166E5D00DBB082 /* UITabBar+FlatUI.m in Sources */,
 				D4F19C9418168E2900DBB082 /* AMTableView.m in Sources */,
+				1451B72A19E85FF9008BBE2D /* AGPhotoBrowserCell.m in Sources */,
 				D4F19C5E18166E5D00DBB082 /* UIColor+FlatUI.m in Sources */,
 				D4F19C5D18166E5D00DBB082 /* UIBarButtonItem+FlatUI.m in Sources */,
 				D4F19C9218168E2900DBB082 /* AMSlideTableCell.m in Sources */,
 				D4F19C9118168E2900DBB082 /* AMSlideOutNavigationController.m in Sources */,
 				D4F19C5718166E5D00DBB082 /* FUIButton.m in Sources */,
 				D4F19C6518166E5D00DBB082 /* UIStepper+FlatUI.m in Sources */,
+				1451B72C19E85FF9008BBE2D /* AGPhotoBrowserZoomableView.m in Sources */,
 				D40ABB981816B7A200DFB373 /* MapVViewController.m in Sources */,
 				D40ABB901816A62100DFB373 /* PhotoViewController.m in Sources */,
 			);
@@ -681,6 +904,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		141AFC8F19EC0B1900343CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
+				INFOPLIST_FILE = "TestmunkDemo copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "TestmunkDemo-cal";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		141AFC9019EC0B1900343CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
+				INFOPLIST_FILE = "TestmunkDemo copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "TestmunkDemo-cal";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		654E34C616CE383F00FBB3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -706,7 +975,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -730,7 +999,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -743,7 +1012,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "SlideoutStoryboardSample/TestmunkDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = TestmunkDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -756,7 +1026,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "SlideoutStoryboardSample/TestmunkDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = TestmunkDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -766,6 +1037,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		141AFC8E19EC0B1900343CC7 /* Build configuration list for PBXNativeTarget "TestmunkDemo-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141AFC8F19EC0B1900343CC7 /* Debug */,
+				141AFC9019EC0B1900343CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		654E34A016CE383F00FBB3DA /* Build configuration list for PBXProject "TestmunkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -773,7 +1053,7 @@
 				654E34C716CE383F00FBB3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		654E34C816CE383F00FBB3DA /* Build configuration list for PBXNativeTarget "TestmunkDemo" */ = {
 			isa = XCConfigurationList;
@@ -782,7 +1062,7 @@
 				654E34CA16CE383F00FBB3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
