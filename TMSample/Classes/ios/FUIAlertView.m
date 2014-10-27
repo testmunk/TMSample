@@ -12,6 +12,7 @@
 @interface FUIAlertView()
 
 @property(nonatomic, weak) UIView *alertContentContainer;
+@property(nonatomic, strong) NSMutableArray* textFields;
 
 @end
 
@@ -36,6 +37,8 @@
         self.message = message;
         self.delegate = delegate;
 
+        self.textFields = [@[] mutableCopy];
+        
         // This mask is set to force lay out of subviews when superview's bounds change
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
@@ -72,6 +75,19 @@
         messageLabel.text = self.message;
         [alertContentContainer addSubview:messageLabel];
         _messageLabel = messageLabel;
+        
+        FUITextField* firstTextField = [[FUITextField alloc] init];
+        [firstTextField setTextAlignment:NSTextAlignmentCenter];
+        [self.textFields addObject:firstTextField];
+        [alertContentContainer addSubview:firstTextField];
+        
+        FUITextField* secureTextField = [[FUITextField alloc] init];
+        [secureTextField setSecureTextEntry:YES];
+        [secureTextField setTextAlignment:NSTextAlignmentCenter];
+        [self.textFields addObject:secureTextField];
+        [alertContentContainer addSubview:secureTextField];
+
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow) name:UIKeyboardWillShowNotification object:nil];
 
         if (cancelButtonTitle) {
             [self addButtonWithTitle:cancelButtonTitle];
@@ -87,6 +103,11 @@
     return self;
 }
 
+- (void)keyboardWillShow
+{
+    [self.alertContainer setTransform:CGAffineTransformMakeTranslation(0, - self.alertContainer.frame.origin.y + [[UIApplication sharedApplication] statusBarFrame].size.height)];
+}
+
 - (void) layoutSubviews {
     [super layoutSubviews];
     if (CGAffineTransformIsIdentity(self.alertContainer.transform)) {
@@ -98,7 +119,7 @@
         CGRect alertContainerFrame = CGRectInset(contentContainerFrame, -padding, -padding);
         alertContainerFrame.origin = CGPointMake(floorf((self.frame.size.width - alertContainerFrame.size.width) / 2),
                                                  floorf((self.frame.size.height - alertContainerFrame.size.height) / 2));
-        alertContainerFrame.origin.y = MAX(10, alertContainerFrame.origin.y - 30);
+        alertContainerFrame.origin.y = MAX(30, alertContainerFrame.origin.y - 30);
         self.alertContainer.frame = alertContainerFrame;
         CGRect titleFrame = self.titleLabel.frame;
         titleFrame.size.width = self.alertContentContainer.frame.size.width;
@@ -116,6 +137,17 @@
         CGPoint messageOrigin = CGPointMake(floorf((self.alertContentContainer.frame.size.width - self.messageLabel.frame.size.width)/2), CGRectGetMaxY(titleFrame) + 10);
         messageFrame.origin = messageOrigin;
         self.messageLabel.frame = messageFrame;
+        
+        if (self.alertViewStyle == FUIAlertViewStylePlainTextInput || self.alertViewStyle == FUIAlertViewStyleSecureTextInput) {
+            if (self.alertViewStyle == FUIAlertViewStyleSecureTextInput) {
+                [self.textFields[0] setSecureTextEntry:YES];
+            }
+            [self.textFields[0] setFrame:(CGRect){{0, self.messageLabel.frame.origin.y + self.messageLabel.frame.size.height + 10},{self.alertContentContainer.frame.size.width, 40}}];
+        }
+        if (self.alertViewStyle == FUIAlertViewStyleLoginAndPasswordInput) {
+            [self.textFields[0] setFrame:(CGRect){{0, self.messageLabel.frame.origin.y + self.messageLabel.frame.size.height + 10},{self.alertContentContainer.frame.size.width, 40}}];
+            [self.textFields[1] setFrame:(CGRect){{0, ((FUITextField*)self.textFields[0]).frame.origin.y + ((FUITextField*)self.textFields[0]).frame.size.height + 5},{self.alertContentContainer.frame.size.width, 40}}];
+        }
 
         __block CGFloat startingButtonY = self.alertContentContainer.frame.size.height - [self totalButtonHeight];
         [self.buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -128,6 +160,23 @@
                 startingButtonY += (button.frame.size.height + self.buttonSpacing);
             }
         }];
+        if(self.messageLabel.superview&&![self.messageLabel.superview isEqual:self.alertContentContainer]) {
+            [self.messageLabel removeFromSuperview];
+            [self.alertContentContainer addSubview:self.messageLabel];
+        }
+        if(self.maxHeight) {
+            CGSize originalSize = messageFrame.size;
+            messageFrame.size.height = self.alertContentContainer.frame.size.height-self.titleLabel.frame.size.height-[self totalButtonHeight]-20;
+            if(messageFrame.size.height<originalSize.height) {
+                UIScrollView *messageScrollView = [[UIScrollView alloc] initWithFrame:messageFrame];
+                messageFrame.origin = CGPointZero;
+                messageFrame.size = originalSize;
+                self.messageLabel.frame = messageFrame;
+                [messageScrollView setContentSize:originalSize];
+                [messageScrollView addSubview:self.messageLabel];
+                [self.alertContentContainer addSubview:messageScrollView];
+            }
+        }
     }
 }
 
@@ -149,10 +198,46 @@
 
 - (CGSize) calculateSize {
     CGFloat contentWidth = 250;
-    CGFloat titleHeight = [self.titleLabel.text sizeWithFont:self.titleLabel.font constrainedToSize:CGSizeMake(contentWidth, CGFLOAT_MAX)].height;
-    CGFloat messageHeight = [self.messageLabel.text sizeWithFont:self.messageLabel.font constrainedToSize:CGSizeMake(contentWidth, CGFLOAT_MAX)].height;
+    
+    CGFloat titleHeight;
+    CGFloat messageHeight;
+    CGFloat textFieldHeight = 0;
+    
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending) {
+        // iOS7 methods
+        CGRect titleRect = [self.titleLabel.text boundingRectWithSize:CGSizeMake(contentWidth, CGFLOAT_MAX)
+                                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                                           attributes:@{NSFontAttributeName:self.titleLabel.font}
+                                                              context:nil];
+        CGRect messageRect = [self.messageLabel.text boundingRectWithSize:CGSizeMake(contentWidth, CGFLOAT_MAX)
+                                                                  options:NSStringDrawingUsesLineFragmentOrigin
+                                                               attributes:@{NSFontAttributeName:self.messageLabel.font}
+                                                                  context:nil];
+        titleHeight = titleRect.size.height;
+        messageHeight = messageRect.size.height;
+    } else {
+        // Pre-iOS7 methods
+        titleHeight = [self.titleLabel.text sizeWithFont:self.titleLabel.font constrainedToSize:CGSizeMake(contentWidth, CGFLOAT_MAX)].height;
+        messageHeight = [self.messageLabel.text sizeWithFont:self.messageLabel.font constrainedToSize:CGSizeMake(contentWidth, CGFLOAT_MAX)].height;
+    }
+    
+    CGFloat singleTextFieldHeight = 40;
+    if (self.alertViewStyle == FUIAlertViewStyleDefault) {
+        textFieldHeight = -10;
+    }
+    if (self.alertViewStyle == FUIAlertViewStylePlainTextInput || self.alertViewStyle == FUIAlertViewStyleSecureTextInput) {
+        textFieldHeight = singleTextFieldHeight;
+    }
+    if (self.alertViewStyle == FUIAlertViewStyleLoginAndPasswordInput) {
+        textFieldHeight = singleTextFieldHeight * 2 + 10;
+    }
+    
     CGFloat buttonHeight = [self totalButtonHeight];
-    return CGSizeMake(contentWidth, titleHeight + 10 + messageHeight + 10 + buttonHeight);
+    CGFloat contentHeight = titleHeight + 10 + messageHeight + 10 + buttonHeight + 10 + textFieldHeight;
+    if(self.maxHeight && contentHeight>self.maxHeight)
+        return CGSizeMake(contentWidth, MAX(titleHeight + 10 + buttonHeight, self.maxHeight));
+    else
+        return CGSizeMake(contentWidth, contentHeight);
 }
 
 - (NSInteger) numberOfButtons {
@@ -197,10 +282,17 @@
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated {
     //todo delegate
     
+    _dismissButtonIndex = buttonIndex;
+    
     self.alertContainer.transform = CGAffineTransformIdentity;
     if ([self.delegate respondsToSelector:@selector(alertView:willDismissWithButtonIndex:)]) {
         [self.delegate alertView:self willDismissWithButtonIndex:buttonIndex];
     }
+    
+    if (self.onDismissAction) {
+        self.onDismissAction();
+    }
+    
     [UIView animateWithDuration:self.animationDuration animations:^{
         self.backgroundOverlay.alpha = 0;
         self.alertContainer.alpha = 0;
@@ -236,6 +328,13 @@
     if ([self.delegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)]) {
         [self.delegate alertView:self clickedButtonAtIndex:(NSInteger)index];
     }
+    
+    if (index == self.cancelButtonIndex && self.onCancelAction) {
+        self.onCancelAction();
+    } else if (index != self.cancelButtonIndex && self.onOkAction) {
+        self.onOkAction();
+    }
+    
     [self dismissWithClickedButtonIndex:(NSInteger)index animated:YES];
 }
 
@@ -283,6 +382,16 @@
     [self.buttons enumerateObjectsUsingBlock:^(FUIButton *button, NSUInteger idx, BOOL *stop) {
         button.shadowHeight = defaultButtonShadowHeight;
     }];
+}
+
+- (FUITextField *)textFieldAtIndex:(NSInteger)textFieldIndex
+{
+    return (textFieldIndex < 2) ? self.textFields[textFieldIndex] : nil;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 }
 
 @end

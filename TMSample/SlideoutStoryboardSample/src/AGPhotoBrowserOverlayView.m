@@ -33,6 +33,8 @@
 
 @implementation AGPhotoBrowserOverlayView
 
+@synthesize description = _description;
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
