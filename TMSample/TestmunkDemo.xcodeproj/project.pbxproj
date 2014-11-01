@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		412ABF721816916900ECF984 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 412ABF711816916900ECF984 /* JVFloatLabeledTextField.m */; };
+		412DE73F1A048F4300B4D160 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412DE73E1A048F4300B4D160 /* Security.framework */; };
 		416B7A771818CD29009D1F7C /* TDTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416B7A761818CD29009D1F7C /* TDTableDetailViewController.m */; };
 		417788F4181697CD0071506A /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F1181697CD0071506A /* EAIntroPage.m */; };
 		417788F5181697CD0071506A /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417788F3181697CD0071506A /* EAIntroView.m */; };
@@ -90,6 +91,7 @@
 /* Begin PBXFileReference section */
 		412ABF701816916900ECF984 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		412ABF711816916900ECF984 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		412DE73E1A048F4300B4D160 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		416B7A751818CD29009D1F7C /* TDTableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTableDetailViewController.h; sourceTree = "<group>"; };
 		416B7A761818CD29009D1F7C /* TDTableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTableDetailViewController.m; sourceTree = "<group>"; };
 		417788F0181697CD0071506A /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412DE73F1A048F4300B4D160 /* Security.framework in Frameworks */,
 				D40ABB9A1816B85400DFB373 /* MapKit.framework in Frameworks */,
 				417788FE1816A1000071506A /* QuartzCore.framework in Frameworks */,
 				654E34A916CE383F00FBB3DA /* UIKit.framework in Frameworks */,
@@ -362,6 +365,7 @@
 		654E34A716CE383F00FBB3DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				412DE73E1A048F4300B4D160 /* Security.framework */,
 				D40ABB991816B85400DFB373 /* MapKit.framework */,
 				417788FD1816A1000071506A /* QuartzCore.framework */,
 				D4F19C1618166D1900DBB082 /* CoreText.framework */,
