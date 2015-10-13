@@ -8,6 +8,8 @@
 
 #import "TDAppDelegate.h"
 #import "AMSlideOutNavigationController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 
 @implementation TDAppDelegate
@@ -53,6 +55,8 @@
     //[self.window setRootViewController:self.slideoutController];
     self.AmController= self.slideoutController;
     
+    [Fabric with:@[[Crashlytics class]]];
+
     return YES;
 }
 							

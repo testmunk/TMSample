@@ -25,6 +25,11 @@
 		654E34B916CE383F00FBB3DA /* TDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34B816CE383F00FBB3DA /* TDAppDelegate.m */; };
 		654E34C216CE383F00FBB3DA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654E34C016CE383F00FBB3DA /* MainStoryboard.storyboard */; };
 		654E34C516CE383F00FBB3DA /* TDSliderContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34C416CE383F00FBB3DA /* TDSliderContainerViewController.m */; };
+		B2A3FA8E1BCCEBF10075C7FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A3FA8B1BCCEBF00075C7FE /* SystemConfiguration.framework */; settings = {ASSET_TAGS = (); }; };
+		B2A3FA8F1BCCEBF10075C7FE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A3FA8C1BCCEBF00075C7FE /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		B2A3FA901BCCEBF10075C7FE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A3FA8D1BCCEBF00075C7FE /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
+		B2A3FA921BCCED710075C7FE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A3FA911BCCED710075C7FE /* libz.tbd */; };
+		B2A3FA941BCCED7F0075C7FE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A3FA931BCCED7F0075C7FE /* libc++.tbd */; };
 		B2F7FF601BB037BF0018B66F /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D40ABB9C1816BB0D00DFB373 /* MapViewAnnotation.m */; };
 		B2F7FF611BB037BF0018B66F /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F19C3118166E5D00DBB082 /* FUIAlertView.m */; };
 		B2F7FF621BB037BF0018B66F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E34B416CE383F00FBB3DA /* main.m */; };
@@ -197,6 +202,11 @@
 		654E34C116CE383F00FBB3DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		654E34C316CE383F00FBB3DA /* TDSliderContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDSliderContainerViewController.h; sourceTree = "<group>"; };
 		654E34C416CE383F00FBB3DA /* TDSliderContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDSliderContainerViewController.m; sourceTree = "<group>"; };
+		B2A3FA8B1BCCEBF00075C7FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		B2A3FA8C1BCCEBF00075C7FE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B2A3FA8D1BCCEBF00075C7FE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B2A3FA911BCCED710075C7FE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B2A3FA931BCCED7F0075C7FE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B2F7FFB41BB037BF0018B66F /* TestmunkDemo-tm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestmunkDemo-tm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7FFB51BB037BF0018B66F /* TestmunkDemo copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestmunkDemo copy2-Info.plist"; path = "/Users/lukasz/Development/workspace/work/Testmunk/internal/samples/ios/TMSample/TMSample/TestmunkDemo copy2-Info.plist"; sourceTree = "<absolute>"; };
 		B2F7FFB61BB038960018B66F /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
@@ -318,15 +328,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A3FA941BCCED7F0075C7FE /* libc++.tbd in Frameworks */,
+				B2A3FA921BCCED710075C7FE /* libz.tbd in Frameworks */,
 				B2F7FFBA1BB038D30018B66F /* CFNetwork.framework in Frameworks */,
 				B2F7FFB81BB038BF0018B66F /* calabash.framework in Frameworks */,
 				B2F7FF891BB037BF0018B66F /* Security.framework in Frameworks */,
 				B2F7FF8A1BB037BF0018B66F /* MapKit.framework in Frameworks */,
 				B2F7FF8B1BB037BF0018B66F /* QuartzCore.framework in Frameworks */,
 				B2F7FF8C1BB037BF0018B66F /* UIKit.framework in Frameworks */,
+				B2A3FA8E1BCCEBF10075C7FE /* SystemConfiguration.framework in Frameworks */,
 				B2F7FF8D1BB037BF0018B66F /* CoreText.framework in Frameworks */,
 				B2F7FF8E1BB037BF0018B66F /* Foundation.framework in Frameworks */,
 				B2F7FF8F1BB037BF0018B66F /* CoreGraphics.framework in Frameworks */,
+				B2A3FA901BCCEBF10075C7FE /* Crashlytics.framework in Frameworks */,
+				B2A3FA8F1BCCEBF10075C7FE /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +483,11 @@
 		654E34A716CE383F00FBB3DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2A3FA931BCCED7F0075C7FE /* libc++.tbd */,
+				B2A3FA911BCCED710075C7FE /* libz.tbd */,
+				B2A3FA8B1BCCEBF00075C7FE /* SystemConfiguration.framework */,
+				B2A3FA8C1BCCEBF00075C7FE /* Fabric.framework */,
+				B2A3FA8D1BCCEBF00075C7FE /* Crashlytics.framework */,
 				B2F7FFB91BB038D30018B66F /* CFNetwork.framework */,
 				B2F7FFB61BB038960018B66F /* calabash.framework */,
 				412DE73E1A048F4300B4D160 /* Security.framework */,
@@ -658,6 +678,7 @@
 				B2F7FF5F1BB037BF0018B66F /* Sources */,
 				B2F7FF881BB037BF0018B66F /* Frameworks */,
 				B2F7FF901BB037BF0018B66F /* Resources */,
+				B2A3FA8A1BCCE89C0075C7FE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -776,6 +797,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2A3FA8A1BCCE89C0075C7FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cc90c24e74c3026b92cb8398067edfbedf79b92e 6e286ef692e92ab47e72d82ac1ee697441420fe370d91dabc80e27620b150c37";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		654E34A116CE383F00FBB3DA /* Sources */ = {
@@ -979,6 +1016,7 @@
 		B2F7FFB21BB037BF0018B66F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -986,7 +1024,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestmunkDemo copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"\"$(SRCROOT)/calabash.framework/calabash\"",
@@ -1001,6 +1039,7 @@
 		B2F7FFB31BB037BF0018B66F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1008,7 +1047,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestmunkDemo copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"\"$(SRCROOT)/calabash.framework/calabash\"",
