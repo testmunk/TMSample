@@ -555,6 +555,11 @@
 				CLASSPREFIX = AM;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Andrea Mazzini";
+				TargetAttributes = {
+					654E34A416CE383F00FBB3DA = {
+						DevelopmentTeam = 2W5XS36682;
+					};
+				};
 			};
 			buildConfigurationList = 654E34A016CE383F00FBB3DA /* Build configuration list for PBXProject "TestmunkDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -744,11 +749,15 @@
 		654E34C916CE383F00FBB3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "SlideoutStoryboardSample/TestmunkDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = TestmunkDemo;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -757,11 +766,15 @@
 		654E34CA16CE383F00FBB3DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideoutStoryboardSample/TestmunkDemo-Prefix.pch";
 				INFOPLIST_FILE = "SlideoutStoryboardSample/TestmunkDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = TestmunkDemo;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
